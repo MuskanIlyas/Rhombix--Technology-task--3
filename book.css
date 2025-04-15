@@ -1,0 +1,95 @@
+/* Background and fonts */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('https://images.unsplash.com/photo-1512820790803-83ca734da794') no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+  min-height: 100vh;
+}
+
+.background-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+}
+
+/* Container styling */
+.container {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 30px;
+  background: transparant;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+/* Headings */
+h1, h2 {
+  text-align: center;
+  color: white;
+}
+
+/* Controls styling */
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"], select {
+  padding: 12px;
+  font-size: 12px;
+  border-radius: 8px;
+  border: 3px ;
+  flex: 1 1 300px;
+}
+
+/* Book cards */
+.book-list {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+}
+
+.book-item {
+  background: #e0f7fa;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.book-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+/* Buttons */
+button {
+  padding: 8px 16px;
+  background: #00796b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #004d40;
+}
+
+/* Borrowing history list */
+#historyList {
+  padding-left: 20px;
+  color: white;
+}
